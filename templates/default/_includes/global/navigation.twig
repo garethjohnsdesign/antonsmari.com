@@ -1,0 +1,35 @@
+<!-- Desktop Navigation -->
+<div class="grid-x grid-padding-x grid-padding-y align-justify">
+
+  <div class="shrink cell">
+    <a href="#" class="white text-uppercase show-for-small-only" aria-label="Navigation" data-toggle="overlayNavigation">
+    {% if bodyClass == "project" %}
+    <div>{{ entry.title }}</div>
+    <div class="dark-gray">{{ entry.client }}</div>
+    {% elseif bodyClass == "category" %}
+    <div>{{ siteName }}</div>
+    <div class="dark-gray">{{ category.title }}</div>
+    {% elseif bodyClass == "contact" %}
+    {{ siteName }} <div class="dark-gray">{{ entry.title }}</div>
+    {% else %}
+    <div>{{ siteName }}</div>
+    <div class="dark-gray">Cinematographer</div>{% endif %}
+    </a>
+    <a href="#" class="white text-uppercase show-for-medium" aria-label="Navigation" data-toggle="overlayNavigation">
+    {% if bodyClass == "project" %}
+    {{ entry.title }} <span class="dark-gray padding-left">{{ entry.client }}</span>
+    {% elseif bodyClass == "category" %}
+    {{ siteName }} <span class="dark-gray padding-left">{{ category.title }}</span>
+    {% elseif bodyClass == "contact" %}
+    {{ siteName }} <span class="dark-gray padding-left">{{ entry.title }}</span>
+    {% else %}
+    {{ siteName }} <span class="dark-gray padding-left">Cinematographer</span>{% endif %}
+    </a>
+  </div>
+
+  <div class="shrink cell">
+    <a href="#" class="white text-uppercase" aria-label="Navigation" data-toggle="overlayNavigation">Menu</a>
+  </div>
+
+</div>
+<!-- End Desktop Navigation -->

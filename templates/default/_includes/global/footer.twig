@@ -1,0 +1,22 @@
+<!-- Desktop Navigation -->
+<div class="grid-x grid-padding-x grid-padding-y align-justify">
+
+  <div class="small-10 cell">
+    <ul class="menu dark-gray">
+      {% for block in socials.socials.all() %}
+      {% switch block.type %}
+        {% case "instagram" %}
+          <li class="padding-left"><a href="{{block.socialLink}}" target="_blank">Instagram</a></li>
+        {% case "vimeo" %}
+          <li><a href="{{block.socialLink}}" target="_blank">Vimeo</a></li>
+      {% endswitch %}
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="shrink cell">
+    <a href="mailto:{{site.email}}">©</a>
+  </div>
+
+</div>
+<!-- End Desktop Navigation -->

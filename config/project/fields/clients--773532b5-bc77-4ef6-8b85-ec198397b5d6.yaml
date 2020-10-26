@@ -1,0 +1,57 @@
+contentColumnType: text
+fieldGroup: afa397d2-521d-48d6-acb2-4d4e53b2fd50
+handle: clients
+instructions: ''
+name: Clients
+searchable: false
+settings:
+  addRowLabel: 'Add a client'
+  columnType: text
+  columns:
+    __assoc__:
+      -
+        - col1
+        -
+          __assoc__:
+            -
+              - heading
+              - Client
+            -
+              - handle
+              - client
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+      -
+        - col2
+        -
+          __assoc__:
+            -
+              - heading
+              - Link
+            -
+              - handle
+              - link
+            -
+              - width
+              - ''
+            -
+              - type
+              - url
+  defaults:
+    -
+      __assoc__:
+        -
+          - col1
+          - ''
+        -
+          - col2
+          - ''
+  maxRows: ''
+  minRows: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Table

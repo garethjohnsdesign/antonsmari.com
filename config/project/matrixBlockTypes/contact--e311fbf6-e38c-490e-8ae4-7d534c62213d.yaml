@@ -1,0 +1,89 @@
+field: 96b8e697-dc7c-42cc-a91f-2bf75ed5a402
+fieldLayouts:
+  580d64a2-bb72-4c81-8ff7-e2984b3a1e12:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: e319bf98-e379-4ec4-88f2-46cfe610b767
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 35b2e9eb-bb5c-48cf-8e09-736bd3bdda8b
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c95c74b5-7c1d-43c6-bf0d-28afc520e919
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  35b2e9eb-bb5c-48cf-8e09-736bd3bdda8b:
+    contentColumnType: text
+    fieldGroup: null
+    handle: company
+    instructions: ''
+    name: Company
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  c95c74b5-7c1d-43c6-bf0d-28afc520e919:
+    contentColumnType: string
+    fieldGroup: null
+    handle: email
+    instructions: ''
+    name: Email
+    searchable: false
+    settings:
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Email
+  e319bf98-e379-4ec4-88f2-46cfe610b767:
+    contentColumnType: text
+    fieldGroup: null
+    handle: header
+    instructions: ''
+    name: Header
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: contact
+name: Contact
+sortOrder: 1

@@ -1,0 +1,229 @@
+contentColumnType: text
+fieldGroup: 04b3b4bb-5a04-4d55-a1fc-39e4312e4e96
+handle: awards
+instructions: ''
+name: Awards
+searchable: true
+settings:
+  addRowLabel: 'Add award'
+  columnType: text
+  columns:
+    __assoc__:
+      -
+        - col4
+        -
+          __assoc__:
+            -
+              - heading
+              - Year
+            -
+              - handle
+              - year
+            -
+              - width
+              - ''
+            -
+              - type
+              - select
+            -
+              - options
+              -
+                -
+                  __assoc__:
+                    -
+                      - label
+                      - '2020'
+                    -
+                      - value
+                      - '2020'
+                    -
+                      - default
+                      - false
+                -
+                  __assoc__:
+                    -
+                      - label
+                      - '2019'
+                    -
+                      - value
+                      - '2019'
+                    -
+                      - default
+                      - false
+                -
+                  __assoc__:
+                    -
+                      - label
+                      - '2018'
+                    -
+                      - value
+                      - '2018'
+                    -
+                      - default
+                      - false
+                -
+                  __assoc__:
+                    -
+                      - label
+                      - '2017'
+                    -
+                      - value
+                      - '2017'
+                    -
+                      - default
+                      - false
+                -
+                  __assoc__:
+                    -
+                      - label
+                      - '2016'
+                    -
+                      - value
+                      - '2016'
+                    -
+                      - default
+                      - false
+                -
+                  __assoc__:
+                    -
+                      - label
+                      - '2015'
+                    -
+                      - value
+                      - '2015'
+                    -
+                      - default
+                      - false
+                -
+                  __assoc__:
+                    -
+                      - label
+                      - '2014'
+                    -
+                      - value
+                      - '2014'
+                    -
+                      - default
+                      - false
+                -
+                  __assoc__:
+                    -
+                      - label
+                      - '2013'
+                    -
+                      - value
+                      - '2013'
+                    -
+                      - default
+                      - false
+                -
+                  __assoc__:
+                    -
+                      - label
+                      - '2012'
+                    -
+                      - value
+                      - '2012'
+                    -
+                      - default
+                      - false
+                -
+                  __assoc__:
+                    -
+                      - label
+                      - '2011'
+                    -
+                      - value
+                      - '2011'
+                    -
+                      - default
+                      - false
+                -
+                  __assoc__:
+                    -
+                      - label
+                      - '2010'
+                    -
+                      - value
+                      - '2010'
+                    -
+                      - default
+                      - false
+      -
+        - col1
+        -
+          __assoc__:
+            -
+              - heading
+              - Award
+            -
+              - handle
+              - award
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+      -
+        - col2
+        -
+          __assoc__:
+            -
+              - heading
+              - Category
+            -
+              - handle
+              - category
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+      -
+        - col3
+        -
+          __assoc__:
+            -
+              - heading
+              - Outcome
+            -
+              - handle
+              - outcome
+            -
+              - width
+              - ''
+            -
+              - type
+              - select
+            -
+              - options
+              -
+                -
+                  __assoc__:
+                    -
+                      - label
+                      - Nominated
+                    -
+                      - value
+                      - Nominated
+                    -
+                      - default
+                      - true
+                -
+                  __assoc__:
+                    -
+                      - label
+                      - Winner
+                    -
+                      - value
+                      - Winner
+                    -
+                      - default
+                      - false
+  maxRows: ''
+  minRows: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Table
