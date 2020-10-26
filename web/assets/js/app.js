@@ -57,7 +57,11 @@ tippy('[data-tippy-content]', {
 
 const players = Plyr.setup('.player', {
   ratio: '16:9',
-  controls: ['play', 'progress', 'mute', 'volume', 'pip', 'airplay', 'fullscreen']
+  controls: ['play', 'progress', 'mute', 'volume', 'pip', 'airplay', 'fullscreen'],
+  tooltips: { 
+  controls: false,
+  seek: false 
+  }
 });
 
 
