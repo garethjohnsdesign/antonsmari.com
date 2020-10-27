@@ -104,9 +104,9 @@ fieldLayouts:
             width: 100
         name: SEO
         sortOrder: 2
-handle: information
+handle: info
 hasTitleField: false
-name: Information
+name: Info
 section: 65923fc6-a652-4d40-88b1-c54766df929e
 sortOrder: 1
 titleFormat: '{section.name|raw}'

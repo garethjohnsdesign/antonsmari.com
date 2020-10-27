@@ -67,7 +67,7 @@ body {
   font-kerning: normal ;
   margin: 0;
   text-transform: uppercase;
-  letter-spacing: 0.0125rem
+  letter-spacing: 0.075rem
 }
 
 .off-canvas-content {
@@ -75,6 +75,7 @@ body {
   flex-direction: column;
   min-height: calc(var(--vh, 1vh) * 100);
   font-kerning: normal;
+  padding: 1rem;
 }
 
 main {
@@ -190,8 +191,8 @@ html.is-animating .swup-transition-color {
 }
 
 .dark-gray {
-  color: rgba($white, 0.25);
-  @include links (rgba($white, 0.25), $white);
+  color: $dark-gray;
+  @include links ($dark-gray, $white);
 }
 
 .black {
@@ -266,7 +267,7 @@ p a {
 }
 
 .small {
-  font-size: $small-font-size;
+  font-size: 10px;
 }
 
 // 6. Layout
@@ -408,7 +409,6 @@ url('/assets/img/arrow-left@3x.png') 3x
   &:hover .content {
     transition: $primary-transition;
     background: $black;
-    @include opacity(0.5);
   }
 }
 
@@ -563,7 +563,7 @@ overflow: hidden;
 
 .swup-progress-bar {
   height: 2px;
-  background-color: $primary-color;
+  background-color: $white;
 }
 
 .plyr {

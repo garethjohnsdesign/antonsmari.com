@@ -18,7 +18,14 @@
 <div class="grid-x grid-padding-x grid-padding-y align-center">
 
   <div class="shrink cell ">
-    <a href="#" class="dark-gray text-uppercase" aria-label="Navigation" data-toggle="overlayNavigation">Menu</a>
+<ul class="menu align-center margin-bottom-2 dark-gray">
+  {% nav category in craft.categories.group('typeOfProject').all() %}
+    <li>
+     <a href="{{ category.url }}">{{ category.title }}</a>
+    </li>
+  {% endnav %}
+  <li><a href="/info">Info</a></li>
+</ul>
   </div>
 
 </div>
@@ -28,7 +35,9 @@
 {% block main %}
 <div class="grid-x grid-padding-x grid-padding-y">
 <div class="small-12 cell text-center">
-<a href="#" class="h1 text-uppercase" data-toggle="overlayNavigation">Anton Smári Gunnarsson</a>
+<div class="margin-bottom-2"><a href="#" class="h1 text-uppercase" data-toggle="overlayNavigation">Anton Smári Gunnarsson</a></div>
+<div><a href="#" class="h2 text-uppercase dark-gray" data-toggle="overlayNavigation">Director of Photography</a></div>
+{# <div class="margin-top-2"><a href="#" class="dark-gray text-uppercase margin-top-2" aria-label="Navigation" data-toggle="overlayNavigation">Menu</a></div> #}
 </div>
 </div>
 {% endblock %}
@@ -38,17 +47,8 @@
 <!-- Desktop Navigation -->
 <div class="grid-x grid-padding-x grid-padding-y align-center">
 
-  <div class="small-10 cell">
-    <ul class="menu dark-gray align-center">
-      {% for block in socials.socials.all() %}
-      {% switch block.type %}
-        {% case "instagram" %}
-          <li class="padding-left"><a href="{{block.socialLink}}" target="_blank">Instagram</a></li>
-        {% case "vimeo" %}
-          <li><a href="{{block.socialLink}}" target="_blank">Vimeo</a></li>
-      {% endswitch %}
-      {% endfor %}
-    </ul>
+  <div class="small-10 cell text-center">
+    <div class="dark-gray">Copyright 2020</div>
   </div>
 
 </div>

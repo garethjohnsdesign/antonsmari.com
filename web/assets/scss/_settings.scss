@@ -73,10 +73,10 @@ $persian-red: #d82f28;
 // ---------
 
 $global-font-size: 100%;
-$global-font-size: 12px;
-// $global-width: rem-calc(1200);
-$global-width: rem-calc(1600);
-$global-lineheight: 1.5;
+$global-font-size: 11px;
+$global-width: rem-calc(1200);
+// $global-lineheight: 1.5;
+$global-lineheight: 1.75;
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 // $dark-gray: #8a8a8a;
@@ -190,12 +190,12 @@ $header-styles: (
 */
 $header-styles: (
   small: (
-    'h1': ('font-size': 24),
-    'h2': ('font-size': 14),
-    'h3': ('font-size': 14),
-    'h4': ('font-size': 14),
-    'h5': ('font-size': 14),
-    'h6': ('font-size': 14),
+    'h1': ('font-size': 32),
+    'h2': ('font-size': 16),
+    'h3': ('font-size': 12),
+    'h4': ('font-size': 12),
+    'h5': ('font-size': 12),
+    'h6': ('font-size': 12),
   ),
 );
 $header-text-rendering: optimizeLegibility;
@@ -208,7 +208,7 @@ $enable-code-inline: true;
 // $anchor-color: $primary-color;
 $anchor-color: $white;
 // $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
-$anchor-color-hover: scale-color($dark-gray, $lightness: -0%);
+$anchor-color-hover: $dark-gray;
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 $hr-width: $global-width;
@@ -926,9 +926,8 @@ $xy-grid: true;
 $grid-container: $global-width;
 $grid-columns: 12;
 $grid-margin-gutters: (
-  small: 48px,
+  small: 32px,
   medium: 48px,
-  large: 64px
 );
 /*
 $grid-margin-gutters: (
@@ -944,8 +943,6 @@ $grid-padding-gutters: $grid-margin-gutters;
 $grid-container-padding: (
   small: 64px,
   medium: 72px,
-  large: 96px,
-  xlarge: 120px,
 );
 $grid-container-max: $global-width;
 $xy-block-grid-max: 8;

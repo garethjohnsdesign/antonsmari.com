@@ -1,9 +1,9 @@
 <nav class="full reveal tertiary-background-color" id="overlayNavigation" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
-  <div class="grid-y grid-padding-x grid-padding-y align-justify text-center" style="height: 100%">
+  <div class="grid-y grid-padding-x grid-padding-y align-center text-center" style="height: 100%">
 
-    <div class="shrink cell text-uppercase">
+    {# <div class="shrink cell text-uppercase">
       <a href="#" class="dark-gray" data-toggle="overlayNavigation">CLOSE</a>
-    </div>
+    </div> #}
 
     <div class="shrink cell text-uppercase">
       <ul class="vertical menu">
@@ -12,11 +12,11 @@
            <a href="{{ category.url }}" data-toggle="overlayNavigation">{{ category.title }}</a>
           </li>
         {% endnav %}
-        <li><a href="/information" data-toggle="overlayNavigation">Information</a></li>
+        <li><a href="/info" data-toggle="overlayNavigation">Info</a></li>
       </ul>
     </div>
 
-    <div class="shrink cell">
+    {# <div class="shrink cell">
      <ul class="menu align-center dark-gray">
       {% for block in socials.socials.all() %}
       {% switch block.type %}
@@ -27,7 +27,7 @@
       {% endswitch %}
       {% endfor %}
       </ul>
-    </div>
+    </div> #}
 
   </div>
 </nav>

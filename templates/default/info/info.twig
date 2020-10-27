@@ -1,0 +1,130 @@
+{% set bodyClass = 'info' %}
+
+{% if entry.seoTitle | length %}
+{% set seoTitle = entry.seoTitle %}
+{% else %}
+{% set seoTitle = entry.title %}
+{% endif %}
+
+{% if entry.seoDescription | length %}
+{% set seoDescription = entry.seoDescription %}
+{% endif %}
+
+{% extends "_layouts/site" %}
+
+{% block navigation %}
+{% include "_includes/global/navigation" %}
+{% endblock %}
+
+
+{% block main %}
+
+<div class="grid-container">
+
+    <div class="grid-x grid-padding-x grid-padding-y">
+
+        {% if entry.about|length %}
+          <div class="small-12 medium-6 large-auto cell">
+            <div class="dark-gray margin-bottom-1">About</div>
+            {{entry.about}}
+            </div>
+        {% endif %}
+
+        {% set contacts = entry.contacts.all() %}
+        {% if contacts|length %}
+        <div class="small-12 medium-6 large-auto cell">
+        <div class="dark-gray margin-bottom-1">Contact</div>
+         {% for contact in contacts %}
+         <div class="margin-bottom-1">
+             <div class="dark-gray">{{contact.header}}</div>
+             <div>{{contact.company}}</div>
+             <div><a href="mailto:{{contact.email}}">{{contact.email}}</a></div>
+         </div>
+         {% endfor %}
+
+
+
+        {% for block in socials.socials.all() %}
+        {% switch block.type %}
+        {% case "instagram" %}
+          <div><a href="{{block.socialLink}}" target="_blank">Instagram</a></div>
+        {% case "vimeo" %}
+          <div><a href="{{block.socialLink}}" target="_blank">Vimeo</a></div>
+        {% endswitch %}
+        {% endfor %}
+
+
+        </div>
+        {% endif %}
+
+        {% if entry.press|length %}
+          <div class="small-12 medium-6 large-auto cell">
+            <div class="dark-gray margin-bottom-1">Select Press</div>
+                {% for press in entry.press %}
+                    <div><a href="{{ press.link }}" target="_blank">{{ press.press }}</a></div>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        {% if entry.clients|length %}
+      <div class="small-12 medium-6 large-auto cell">
+        <div class="dark-gray margin-bottom-1">Select Clients</div>
+            {% for client in entry.clients %}
+                {% if client.link|length %}<a href="{{ client.link }}" target="_blank">
+                {% if loop.last %}
+                {{ client.client }}
+                {% else %}
+                {{ client.client }},
+                {% endif %}
+                </a>
+                {% else %}
+                {% if loop.last %}
+                {{ client.client }}
+                {% else %}
+                {{ client.client }},
+                {% endif %}
+                {% endif %}
+            {% endfor %}
+      </div>
+      {% endif %}
+
+        {% if entry.recognition|length %}
+        <div class="small-12 medium-6 large-auto cell">
+        
+            <div class="dark-gray margin-bottom-1">Recognition</div>
+            <ul class="menu vertical">
+                {% for recognition in entry.recognition %}
+                    <li>{{ recognition.recognition }}</li>
+                {% endfor %}
+            </ul>
+            </div>
+        {% endif %}
+    </div>
+
+
+    <div class="grid-x grid-padding-x grid-padding-y margin-top-2">
+      <div class="small-12 medium-6 large-8 cell small dark-gray">
+      {{site.copyright}}
+      </div>
+    </div>
+
+    
+    <!-- Terms and Privacy -->
+    <div class="grid-x grid-padding-x grid-padding-y">
+      <div class="shrink cell">
+        <ul class="menu simple dark-gray align-center">
+         <li><a href="/terms" class="small">Terms</a></li>
+         <li><a href="/privacy-policy" class="small">Privacy</a></li>
+         <li><a href="https://www.garethjohnsdesign.com" class="small">Site Credit</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Terms and Privacy -->
+
+</div>
+{% endblock %}
+
+
+{% block footer %}
+{% include "_includes/global/footer" %}
+{% endblock %}
