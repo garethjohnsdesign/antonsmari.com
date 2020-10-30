@@ -1,0 +1,57 @@
+contentColumnType: text
+fieldGroup: 04b3b4bb-5a04-4d55-a1fc-39e4312e4e96
+handle: customCredits
+instructions: ''
+name: 'Custom Credits'
+searchable: false
+settings:
+  addRowLabel: 'Add a custom credit'
+  columnType: text
+  columns:
+    __assoc__:
+      -
+        - col1
+        -
+          __assoc__:
+            -
+              - heading
+              - Role
+            -
+              - handle
+              - role
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+      -
+        - col2
+        -
+          __assoc__:
+            -
+              - heading
+              - Name
+            -
+              - handle
+              - name
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+  defaults:
+    -
+      __assoc__:
+        -
+          - col1
+          - ''
+        -
+          - col2
+          - ''
+  maxRows: ''
+  minRows: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Table

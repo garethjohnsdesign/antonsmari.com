@@ -71,6 +71,11 @@
   {% if entry.director|length %}<div><span class="dark-gray padding-right">Director</span> {{ entry.director }}</div>{% endif %}
   {% if entry.producer|length %}<div><span class="dark-gray padding-right">Producer</span> {{ entry.producer }}</div>{% endif %}
   {% if entry.productionCompany|length %}<div><span class="dark-gray padding-right">Production Company</span> {{ entry.productionCompany }}</div>{% endif %}
+  {% if entry.customCredits|length %}
+  {% for credit in entry.customCredits %}
+  <div><span class="dark-gray padding-right">{{ credit.role }}</span> {{ credit.name }}</div>
+  {% endfor %}
+  {% endif %}
   </div>
 </div>
 
