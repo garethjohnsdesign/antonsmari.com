@@ -17,8 +17,8 @@
 <!-- Desktop Navigation -->
 <div class="grid-x grid-padding-x grid-padding-y align-center">
 
-  <div class="shrink cell ">
-<ul class="menu align-center margin-bottom-2 dark-gray">
+  <div class="shrink cell">
+<ul class="menu align-center margin-bottom-2 dark-gray padding-top-0">
   {% nav category in craft.categories.group('typeOfProject').all() %}
     <li>
      <a href="{{ category.url }}">{{ category.title }}</a>
