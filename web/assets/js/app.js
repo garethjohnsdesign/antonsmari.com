@@ -60,7 +60,7 @@ const players = Plyr.setup('.player', {
   controls: ['play', 'progress', 'mute', 'volume', 'pip', 'airplay', 'fullscreen'],
   tooltips: { 
   controls: false,
-  seek: false 
+  seek: true
   }
 });
 
