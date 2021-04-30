@@ -50,10 +50,6 @@ return [
 
     // Development environment settings
     'dev' => [
-       'siteUrl' => [
-          'default' => 'https://antonsmari.test',
-        ],
-
         // Dev Mode (see https://craftcms.com/support/dev-mode)
         'devMode' => true,
         'allowUpdates' => true,
@@ -64,12 +60,6 @@ return [
 
     // Staging environment settings
     'staging' => [
-
-        'siteUrl' => [
-            'default' => 'https://antonsmari.frb.io',
-        ],
-
-
         'devMode' => true,
         'enableTemplateCaching' => false,
         'allowUpdates' => true,
@@ -79,10 +69,6 @@ return [
 
     // Production environment settings
     'production' => [
-
-        'siteUrl' => [
-            'default' => 'https://www.antonsmari.com',
-        ],
 
         'devMode' => false,
         'enableTemplateCaching' => true,
