@@ -7,7 +7,7 @@
       "uuidString" : "EDB44E38-DB9B-408C-B9C2-C572FB45B1A6"
     }
   ],
-  "creatorBuild" : "34018",
+  "creatorBuild" : "34127",
   "files" : {
     "\/.env" : {
       "cB" : 0,
@@ -295,6 +295,14 @@
       "hM" : 0,
       "oA" : 2,
       "oAP" : "\/config\/project\/fields\/image--04ab3c60-f325-48ea-bf96-347befb870e0.yaml",
+      "oF" : 0
+    },
+    "\/config\/project\/fields\/images--f7797baf-be7c-4100-86e8-d372cb882518.yaml" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/config\/project\/fields\/images--f7797baf-be7c-4100-86e8-d372cb882518.yaml",
       "oF" : 0
     },
     "\/config\/project\/fields\/layout--b4c9ab1f-2382-42ed-a624-d4a42f1389a7.yaml" : {
@@ -628,13 +636,13 @@
     "\/modules" : {
       "ft" : 65536,
       "oA" : 1,
-      "oAP" : "\/build\/modules",
+      "oAP" : "\/modules",
       "oF" : 0
     },
     "\/node_modules" : {
       "ft" : 65536,
       "oA" : 2,
-      "oAP" : "\/build\/node_modules",
+      "oAP" : "\/node_modules",
       "oF" : 0
     },
     "\/node_modules\/@popperjs\/core\/lib\/createPopper.js" : {
@@ -1431,7 +1439,7 @@
     "\/storage" : {
       "ft" : 65536,
       "oA" : 1,
-      "oAP" : "\/build\/storage",
+      "oAP" : "\/storage",
       "oF" : 0
     },
     "\/templates\/default\/_includes\/blocks\/excerpt.twig" : {
@@ -1957,7 +1965,7 @@
     "\/vendor" : {
       "ft" : 65536,
       "oA" : 1,
-      "oAP" : "\/build\/vendor",
+      "oAP" : "\/vendor",
       "oF" : 0
     },
     "\/web\/.htaccess" : {
@@ -2891,7 +2899,7 @@
     "\/web\/cpresources" : {
       "ft" : 65536,
       "oA" : 1,
-      "oAP" : "\/build\/web\/cpresources",
+      "oAP" : "\/web\/cpresources",
       "oF" : 0
     },
     "\/web\/index.php" : {
@@ -4980,27 +4988,30 @@
 
       ],
       "contentEntries" : [
-        "!(node_modules)\/**\/*.html",
-        "!(node_modules)\/**\/*.htm",
-        "!(node_modules)\/**\/*.shtml",
-        "!(node_modules)\/**\/*.xhtml",
-        "!(node_modules)\/**\/*.php",
-        "!(node_modules)\/**\/*.js",
-        "!(node_modules)\/**\/*.ts",
-        "!(node_modules)\/**\/*.coffee",
-        "!(node_modules)\/**\/*.erb",
-        "!(node_modules)\/**\/*.pug",
-        "!(node_modules)\/**\/*.jade",
-        "!(node_modules)\/**\/*.slim",
-        "!(node_modules)\/**\/*.haml",
-        "!(node_modules)\/**\/*.md",
-        "!(node_modules)\/**\/*.kit"
+        "**\/*.html",
+        "**\/*.htm",
+        "**\/*.shtml",
+        "**\/*.xhtml",
+        "**\/*.php",
+        "**\/*.js",
+        "**\/*.ts",
+        "**\/*.coffee",
+        "**\/*.erb",
+        "**\/*.pug",
+        "**\/*.jade",
+        "**\/*.slim",
+        "**\/*.haml",
+        "**\/*.md",
+        "**\/*.kit"
       ],
       "removeFontFace" : 0,
       "removeKeyframes" : 0,
       "removeVariables" : 0,
       "safelistEntries" : [
 
+      ],
+      "skippedEntries" : [
+        "node_modules\/**"
       ]
     },
     "rollupContext" : "",
@@ -5035,6 +5046,7 @@
     "tsNoImplicitThis" : 0,
     "tsNoImplicitUseStrict" : 0,
     "tsNoLib" : 0,
+    "tsNoPropertyAccessFromIndexSignature" : 0,
     "tsNoResolve" : 0,
     "tsNoStrictGenericChecks" : 0,
     "tsNoUncheckedIndexAccess" : 0,
