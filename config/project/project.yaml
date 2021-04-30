@@ -1,7 +1,7 @@
-dateModified: 1607366447
+dateModified: 1619784944
 email:
   fromEmail: info@garethjohnsdesign.com
-  fromName: 'Aoife McArdle'
+  fromName: 'Anton Smari Gunnarsson'
   replyToEmail: null
   template: null
   transportSettings:
@@ -47,7 +47,7 @@ plugins:
   seo:
     edition: standard
     enabled: true
-    schemaVersion: 3.1.1
+    schemaVersion: 3.2.0
   simplemap:
     edition: lite
     enabled: true
@@ -61,7 +61,7 @@ system:
   live: true
   name: 'Anton Smári Gunnarsson'
   retryDuration: null
-  schemaVersion: 3.5.13
+  schemaVersion: 3.6.8
   timeZone: UTC
 users:
   allowPublicRegistration: false

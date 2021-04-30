@@ -1,19 +1,20 @@
 contentColumnType: string
 fieldGroup: dfe9b0d4-736b-4fbd-a584-88932d8d56a9
-handle: image
+handle: images
 instructions: ''
-name: Image
+name: Images
 searchable: true
 settings:
-  allowedKinds: null
+  allowedKinds:
+    - image
   defaultUploadLocationSource: 'volume:244f7440-a428-4998-8c23-00991784b369' # Uploads
   defaultUploadLocationSubpath: ''
-  limit: '1'
+  limit: ''
   localizeRelations: false
-  restrictFiles: ''
+  restrictFiles: '1'
   selectionLabel: 'Add an image'
   showUnpermittedFiles: false
-  showUnpermittedVolumes: true
+  showUnpermittedVolumes: false
   singleUploadLocationSource: 'volume:244f7440-a428-4998-8c23-00991784b369' # Uploads
   singleUploadLocationSubpath: ''
   source: null
@@ -21,7 +22,7 @@ settings:
   targetSiteId: null
   useSingleFolder: false
   validateRelatedElements: ''
-  viewMode: large
+  viewMode: list
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Assets

@@ -7,7 +7,7 @@ searchable: true
 settings:
   allowedKinds:
     - image
-  defaultUploadLocationSource: 'volume:244f7440-a428-4998-8c23-00991784b369'
+  defaultUploadLocationSource: 'volume:244f7440-a428-4998-8c23-00991784b369' # Uploads
   defaultUploadLocationSubpath: ''
   limit: '1'
   localizeRelations: false
@@ -15,7 +15,7 @@ settings:
   selectionLabel: ''
   showUnpermittedFiles: false
   showUnpermittedVolumes: true
-  singleUploadLocationSource: 'volume:244f7440-a428-4998-8c23-00991784b369'
+  singleUploadLocationSource: 'volume:244f7440-a428-4998-8c23-00991784b369' # Uploads
   singleUploadLocationSubpath: ''
   source: null
   sources: '*'
